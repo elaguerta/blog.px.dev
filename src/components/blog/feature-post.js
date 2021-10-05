@@ -23,6 +23,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import styles from './feature-blog.module.scss';
 import PostPlaceholder from '../post-placeholder';
+import { urlFromSlug } from '../utils';
 
 const FeatureBlogPostItem = ({ post }) => {
   const {
@@ -34,7 +35,7 @@ const FeatureBlogPostItem = ({ post }) => {
   } = post;
   return (
     <div className={`container ${styles.featured}`}>
-      <Link to={`/blog/${slug}`}>
+      <Link to={urlFromSlug(slug)}>
         <div className='row'>
 
           <div className={`col-5 ${styles.featuredImage}`}>
