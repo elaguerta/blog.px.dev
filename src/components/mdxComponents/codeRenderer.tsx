@@ -25,7 +25,6 @@ import vsDark from 'prism-react-renderer/themes/duotoneDark';
 import { ThemeModeContext } from '../mainThemeProvider';
 import copyBtn from '../../images/copy-btn.svg';
 
-
 const LineNumber = withStyles((theme) => ({
   lineBlock: {
     display: 'inline-block',
